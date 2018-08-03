@@ -14,7 +14,7 @@
 //}
 //@import "node_modules/bootstrap-saas/assets/stylesheets/bootstrap";
 $navbar-color:#3c3e42;//Sass文件中特有的变量定义，Sass中的变量均以$开头。
-
+$gray-lighter:#3c3e42;
 /* universal */
 body {
   padding-top: 60px;
@@ -25,13 +25,8 @@ section {
 textarea {
   resize: vertical;
 }
-ul {
-  list-style-type: none;
-}
-li {
-  float: right;
-}
-.jumbotron {
+
+.dropdown {
   text-align: center;
 }
 /*  typography  */
@@ -161,4 +156,35 @@ input {
   &:hover {
     background-color: transparent;
   }
+}
+
+/* Users edit*/
+.gravatar_edit {
+  margin: 15px auto;
+  text-align: center;
+  .gravatar {
+    float: none;
+    max-width: 100px;
+  }
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  li {
+    clear: both;
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+
+
+.delete-btn {
+  clear: both;
+  float: right;
+  position: relative;
+  right: 0;
 }

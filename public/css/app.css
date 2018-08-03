@@ -10483,15 +10483,7 @@ textarea {
   resize: vertical;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  float: right;
-}
-
-.jumbotron {
+.dropdown {
   text-align: center;
 }
 
@@ -10654,5 +10646,37 @@ input {
 
 #logout:hover {
   background-color: transparent;
+}
+
+/* Users edit*/
+
+.gravatar_edit {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.gravatar_edit .gravatar {
+  float: none;
+  max-width: 100px;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.users li {
+  clear: both;
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #3c3e42;
+}
+
+.delete-btn {
+  clear: both;
+  float: right;
+  position: relative;
+  right: 0;
 }
 
